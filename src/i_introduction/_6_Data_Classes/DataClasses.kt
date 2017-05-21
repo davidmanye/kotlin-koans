@@ -14,10 +14,20 @@ fun todoTask6(): Nothing = TODO(
     references = { JavaCode6.Person("Alice", 29) }
 )
 
-class Person
+data class Person(val name: String, val age: Int)
 
 fun task6(): List<Person> {
-    todoTask6()
-    return listOf(/*Person("Alice", 29), Person("Bob", 31)*/)
+    return listOf(Person("Alice", 29), Person("Bob", 31))
+}
+
+fun main(args: Array<String>) {
+    val person1 = Person("Manye", 24)
+    val person2 = Person("Manye", 24)
+
+    println("person1 = $person1")
+    println("person2 = $person2")
+    println("Check person1 == person2: ${person1 == person2}")
+    println("Check person1.equals(person2): ${person1.equals(person2)}")
+
 }
 
