@@ -1,8 +1,6 @@
 package i_introduction._1_Java_To_Kotlin_Converter
 
-import util.JavaCode
-
-class KotlinCode1 : JavaCode() {
+class KotlinCode1 {
     fun task1(collection: Collection<Int>): String {
         val sb = StringBuilder()
         sb.append("{")

@@ -12,10 +12,10 @@ fun todoTask3(): Nothing = TODO(
         Uncomment the commented code and make it compile.
     """,
     documentation = doc2(),
-    references = { name: String -> JavaCode3().foo(name); foo(name) })
+    references = { name: String -> foo(name) })
 
 fun foo(name: String, number: Int = 42, toUpperCase: Boolean = false): String =
-        JavaCode3().foo(name, number, toUpperCase)
+        KotlinCode3.foo(name, number, toUpperCase)
 
 fun task3(): String {
     return (foo("a") +
